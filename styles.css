@@ -1,0 +1,236 @@
+/*
+John Ixcoy
+Family Website:
+Styles
+*/
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', sans-serif;
+}
+html {
+    min-height: 100%;
+    border-bottom: 10px solid #e8630a;
+}
+/*Gets rid of scroll bar*/
+body::-webkit-scrollbar{
+    display: none;
+}
+li {
+    font-size: xx-large;
+    display: inline-block;
+    font-style: italic;
+    font-family: 'Dancing Script', cursive;
+}
+/*Main Page Flex*/
+.pageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    margin: 2%;
+}
+/*Flex holding each info box*/
+.pageContainer2 {
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    width: 100%;
+}
+.pageContainer > .pageContainer2 {
+    justify-content: center;
+}
+/* Class for info box and their animation*/
+.infoBox {
+    padding: 15px;
+    margin: 0;
+}
+.infoBox img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    border: 5px solid #e8630a;
+    border-radius: 10px;
+}
+/*Sets overlay color to orange*/
+.infoBox:hover .overlay{
+    background-color: #e8630a;
+    opacity: 1;
+}
+/*Creates a layer to cover image*/
+.overlay {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    transition: .5s ease;
+    background-color: white;
+}
+.text {
+    background-color: #e8630a;
+    color: white;
+    font-size: 20px;
+    border: 5px solid #e8630a;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    -webkit-transform: translate(-0%, -100%);
+    -ms-transform: translate(-0%, -100%);
+    transform: translate(-0%, -100%);
+    text-align: center;
+}
+.infoBox h3 {
+    margin-top: 30px;
+    color: white;
+}
+/*Flips image of second turtle (I haven't taken a picture of my actual turtles)*/
+#turtle2 {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+#headerTitle {
+    color: black;
+    font-size: 2.7em;
+    width: 33%;
+}
+#headerDecor {
+    width: 33%;
+}
+#headerDecor ul {
+    padding-left: 0;
+    padding-top: auto;
+    padding-bottom: auto;
+    float: right;
+}
+#quickInfo {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: larger;
+}
+#quickInfo p {
+    text-align: center;
+}
+#b1{
+    color: #e8630a;
+}
+#b2{
+    color: #2b4353;
+}
+#b3{
+    color: #9cd3d3
+}
+#infoTable {
+    padding-top: 50px;
+    display: block;
+    width: 100%;
+
+}
+#infoTable table {
+    border-top: solid 2px #e8630a;
+    border-bottom: solid 2px #e8630a;
+    margin-right: auto;
+    margin-left: auto;
+}
+td, th {
+    text-align: left;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+th {
+    border-bottom: solid 2px #9cd3d3;
+}
+.cellBackground:hover{
+    background-color: #9cd3d3;
+}
+a {
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    text-decoration: none;
+}
+a:hover {
+    border-color: black;
+}
+/* dropdown styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.ddbutton, .ddcontent {
+    min-width: 160px;
+    width: 33%;
+
+    display: inline-block;
+        
+}
+.ddbutton {
+    background-color: #9cd3d3;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.ddcontent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.ddcontent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}  
+.ddcontent a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .ddcontent {
+    display: block;
+}
+.dropdown:hover .ddbutton {
+    background-color: #2b4353;
+    color: white;
+}
+/* photo gallery page styling */
+.galleryTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+}
+.galleryImg {
+    width: 300px;
+    width: 300px;
+    padding: 2px;
+}
+.imgWrap {
+    width: fit-content;
+    align-content: center;
+}
+.returnHome {
+    text-align: center;
+    width: 100%;
+}
+/* form styling */
+.formUgh {
+    padding-top: 50px;
+    width: 100%;
+    align-items: center;
+}
+form {
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+textarea {
+    resize: none;
+}
+#sonic > img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
